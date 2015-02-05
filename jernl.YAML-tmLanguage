@@ -1,0 +1,24 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Jernl
+scopeName: text.jernl
+fileTypes: [jernl]
+uuid: 3ab07db8-f88e-44b4-9757-cdb866a22e0f
+
+patterns:
+- comment: header date
+  name: variable.parameter.jernl
+  match: ^\*\*\*\*\s(.+)\s[\*]+
+  captures:
+    '1': {name: support.class.jernl}
+
+- comment: items
+  name: support.function.jernl
+  match: ^(\s\s> ).+
+  captures:
+    '1': {name: variable.parameter.jernl}
+
+- comment: content
+  name: comment.line.jernl
+  match: ^\s\s\s\s.+
+...

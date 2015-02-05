@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>fileTypes</key>
+    <array>
+        <string>jernl</string>
+    </array>
+    <key>name</key>
+    <string>Jernl</string>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>support.class.jernl</string>
+                </dict>
+            </dict>
+            <key>comment</key>
+            <string>header date</string>
+            <key>match</key>
+            <string>^\*\*\*\*\s(.+)\s[\*]+</string>
+            <key>name</key>
+            <string>variable.parameter.jernl</string>
+        </dict>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>variable.parameter.jernl</string>
+                </dict>
+            </dict>
+            <key>comment</key>
+            <string>items</string>
+            <key>match</key>
+            <string>^(\s\s&gt; ).+</string>
+            <key>name</key>
+            <string>support.function.jernl</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>content</string>
+            <key>match</key>
+            <string>^\s\s\s\s.+</string>
+            <key>name</key>
+            <string>comment.line.jernl</string>
+        </dict>
+    </array>
+    <key>scopeName</key>
+    <string>text.jernl</string>
+    <key>uuid</key>
+    <string>3ab07db8-f88e-44b4-9757-cdb866a22e0f</string>
+</dict>
+</plist>
