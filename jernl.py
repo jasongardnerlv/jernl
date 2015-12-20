@@ -44,7 +44,10 @@ class JernlCommand(sublime_plugin.TextCommand):
             else:
                 v = 0, newview.layout_extent()[1]
                 newview.set_viewport_position(v)
-                # trying to use "newview.sel()" to set the cursor position, but it's not working reliably ?!
+                cnt = newview.rowcol(newview.size())[0]
+                newview.sel().clear()
+                pt = newview.text_point(cnt + 1, 0)
+                newview.sel().add(sublime.Region(pt))
         scrollToBottom()
 
     def search(self):
