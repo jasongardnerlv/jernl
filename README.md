@@ -10,6 +10,9 @@ the ability to tag entries and search for them later.
 Create a directory, such as "jernl", in your Sublime Text installation's _Packages_ subdirectory.
 Place the contents of this project in this directory.
 
+_note:_ The syntax highlighting relies on the use of the Sunburst color theme in Sublime.  If using
+another theme, the colors may not appear ideal.  YMMV
+
 ##Configuration
 Open Sublime Text's User Settings, and add the setting __jernl-dir__.  Set the value to the absolute
 path of a directory you would like to use for your jernl files.

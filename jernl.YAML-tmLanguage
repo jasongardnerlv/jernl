@@ -20,5 +20,8 @@ patterns:
 
 - comment: content
   name: comment.line.jernl
-  match: ^\s\s\s\s.+
+  match: ^\s\s\s\s(\s)*([✘])?([✔])?.+
+  captures:
+    '2': {name: keyword.other.jernl}
+    '3': {name: string.quoted.jernl}
 ...
