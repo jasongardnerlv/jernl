@@ -42,27 +42,6 @@
 			<key>name</key>
 			<string>support.function.jernl</string>
 		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.jernl</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.jernl</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>content</string>
-			<key>match</key>
-			<string>^\s\s\s\s(\s)*([✘])?([✔])?.+</string>
-			<key>name</key>
-			<string>comment.line.jernl</string>
-		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.jernl</string>
