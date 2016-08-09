@@ -8,7 +8,7 @@ class JernlnewentryCommand(sublime_plugin.TextCommand):
             self.view.set_viewport_position(v)
         out = "\n";
         out = out + "**** ";
-        out = out + datetime.date.today().strftime("%m/%d/%Y");
+        out = out + datetime.date.today().strftime("%d/%m/%Y");
         out = out + " ********************************************************************************************************";
         out = out + "\n\n  > ";
         self.view.insert(edit, self.view.sel()[0].begin(), out);
