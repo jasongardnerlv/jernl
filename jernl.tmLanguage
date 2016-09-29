@@ -38,7 +38,7 @@
 			<key>comment</key>
 			<string>items</string>
 			<key>match</key>
-			<string>^(\s\s&gt; ).+</string>
+			<string>^((\s{2}|\t)&gt; ).+</string>
 			<key>name</key>
 			<string>support.function.jernl</string>
 		</dict>
