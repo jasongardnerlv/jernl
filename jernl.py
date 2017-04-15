@@ -42,12 +42,7 @@ class JernlCommand(sublime_plugin.TextCommand):
             if newview.is_loading():
                 sublime.set_timeout(scrollToBottom, 100)
             else:
-                v = 0, newview.layout_extent()[1]
-                newview.set_viewport_position(v)
-                cnt = newview.rowcol(newview.size())[0]
-                newview.sel().clear()
-                pt = newview.text_point(cnt + 1, 0)
-                newview.sel().add(sublime.Region(pt))
+                newview.run_command("move_to", {"to": "eof", "extend": "false"})
         scrollToBottom()
 
     def search(self):
