@@ -1,23 +1,23 @@
-#Jernl
+# Jernl
 
-###Daily Journal as a Sublime Text 3 Plugin
+### Daily Journal as a Sublime Text 3 Plugin
 
-##Summary
+## Summary
 This project provides a way of using Sublime Text to maintain a journal/notes/snippets/etc, with
 the ability to tag entries and search for them later.
 
-##Installation
+## Installation
 Create a directory, such as "jernl", in your Sublime Text installation's _Packages_ subdirectory.
 Place the contents of this project in this directory.
 
 _note:_ The syntax highlighting relies on the use of the Sunburst color theme in Sublime.  If using
 another theme, the colors may not appear ideal.  YMMV
 
-##Configuration
+## Configuration
 Open Sublime Text's User Settings, and add the setting __jernl-dir__.  Set the value to the absolute
 path of a directory you would like to use for your jernl files.
 
-##Opening your Journal and Adding New Entries
+## Opening your Journal and Adding New Entries
 You can trigger Jernl one of three ways:
 
 1. Type "Jernl" into Sublime Text's Command Palette
@@ -48,7 +48,7 @@ highlighting file is provided to colorize the different parts of an entry accord
 
 Jernl files will automatically rollover every year.
 
-##Tagging and Searching Entries
+## Tagging and Searching Entries
 When adding entries, you can optionally add tags to the end of any entry title, surrounding with
 _@_ symbols
 
@@ -65,5 +65,5 @@ with another _quick panel_, allowing you to search through your available tags. 
 you get one more _quick panel_, which shows you the title of entries that have the selected tag.
 Choosing an entry in the list will take you directly to that entry (opening the corresponding file, if nec.)
 
-##License
+## License
 Licensed under the [WTFPL](http://www.wtfpl.net/) license :)
