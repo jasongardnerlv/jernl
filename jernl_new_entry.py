@@ -8,7 +8,7 @@ class JernlnewentryCommand(sublime_plugin.TextCommand):
             dateFormat = self.view.settings().get("jernl-date-format");
         out = "\n";
         out = out + "**** ";
-        out = out + datetime.date.today().strftime(dateFormat);
+        out = out + datetime.datetime.today().strftime(dateFormat);
         out = out + " ********************************************************************************************************";
         out = out + "\n\n  > ";
         self.view.run_command("move_to", {"to": "eof", "extend": "false"})
