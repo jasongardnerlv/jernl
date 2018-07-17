@@ -17,6 +17,14 @@ another theme, the colors may not appear ideal.  YMMV
 Open Sublime Text's User Settings, and add the setting __jernl-dir__.  Set the value to the absolute
 path of a directory you would like to use for your jernl files.
 
+For controlling the date format of the new entries, use the setting __jernl-date-format__:
+
+```
+"jernl-date-format": "%m/%d/%Y",
+```
+
+See [here](http://strftime.org/) for formatting options.
+
 ## Opening your Journal and Adding New Entries
 You can trigger Jernl one of three ways:
 
