@@ -53,7 +53,7 @@ class JernlCommand(sublime_plugin.TextCommand):
                     words = line.split()
                     for word in words:
                         if word.startswith("@") and word.endswith("@"):
-                            tagArr = word.replace("@", "").split(",")
+                            tagArr = word.lower().replace("@", "").split(",")
                             for indtag in tagArr:
                                 try:
                                     idx = self.tags.index(indtag)
